@@ -1,0 +1,459 @@
+.titulo {
+  font-family: titulo;
+}
+
+.subtitulo {
+  font-family: subtitulo;
+}
+
+.texto {
+  font-family: texto;
+}
+
+.title__1 {
+  font-family: "Playfair Display SC", "Lora", "Libre Baskerville", "Gloock", "Libre Baskerville", serif;
+  font-size: 2rem;
+}
+
+.title__2 {
+  font-family: "Playfair Display SC", "Lora", "Libre Baskerville", "Gloock", "Libre Baskerville", serif;
+  font-size: 4rem;
+}
+
+.title__3 {
+  font-family: "Playfair Display SC", "Lora", "Libre Baskerville", "Gloock", "Libre Baskerville", serif;
+  font-size: 6rem;
+}
+
+.title__4 {
+  font-family: "Playfair Display SC", "Lora", "Libre Baskerville", "Gloock", "Libre Baskerville", serif;
+  font-size: 8rem;
+}
+
+.title__5 {
+  font-family: "Playfair Display SC", "Lora", "Libre Baskerville", "Gloock", "Libre Baskerville", serif;
+  font-size: 10rem;
+}
+
+.title__6 {
+  font-family: "Playfair Display SC", "Lora", "Libre Baskerville", "Gloock", "Libre Baskerville", serif;
+  font-size: 12rem;
+}
+
+.subtitle__1 {
+  font-family: "Charm", "Tangerine", "Quintessential", cursive;
+  font-size: 2rem;
+}
+
+.subtitle__2 {
+  font-family: "Charm", "Tangerine", "Quintessential", cursive;
+  font-size: 4rem;
+}
+
+.subtitle__3 {
+  font-family: "Charm", "Tangerine", "Quintessential", cursive;
+  font-size: 6rem;
+}
+
+.subtitle__4 {
+  font-family: "Charm", "Tangerine", "Quintessential", cursive;
+  font-size: 8rem;
+}
+
+.subtitle__5 {
+  font-family: "Charm", "Tangerine", "Quintessential", cursive;
+  font-size: 10rem;
+}
+
+.subtitle__6 {
+  font-family: "Charm", "Tangerine", "Quintessential", cursive;
+  font-size: 12rem;
+}
+
+.blanco {
+  color: rgb(255, 255, 255);
+}
+
+.amarillo {
+  color: rgb(251, 147, 0);
+}
+
+.rojo {
+  color: rgb(194, 59, 59);
+}
+
+.azul {
+  color: rgb(52, 63, 86);
+}
+
+.blanco__1 {
+  color: rgb(241, 241, 241);
+}
+
+.blanco__2 {
+  color: rgb(227, 227, 227);
+}
+
+.blanco__3 {
+  color: rgb(213, 213, 213);
+}
+
+.blanco__4 {
+  color: rgb(199, 199, 199);
+}
+
+.blanco__5 {
+  color: rgb(185, 185, 185);
+}
+
+.negro__1 {
+  color: rgb(14, 14, 14);
+}
+
+.negro__2 {
+  color: rgb(28, 28, 28);
+}
+
+.negro__3 {
+  color: rgb(42, 42, 42);
+}
+
+.negro__4 {
+  color: rgb(56, 56, 56);
+}
+
+.negro__5 {
+  color: rgb(70, 70, 70);
+}
+
+.bg__blanco, .comentario__para__tutor {
+  background-color: rgb(255, 255, 255);
+}
+
+.bg__amarillo {
+  background-color: rgb(251, 147, 0);
+}
+
+.bg__rojo {
+  background-color: rgb(194, 59, 59);
+}
+
+.bg__azul {
+  background-color: rgb(52, 63, 86);
+}
+
+.titulo {
+  font-family: titulo;
+}
+
+.subtitulo {
+  font-family: subtitulo;
+}
+
+.texto {
+  font-family: texto;
+}
+
+.title__1 {
+  font-family: "Playfair Display SC", "Lora", "Libre Baskerville", "Gloock", "Libre Baskerville", serif;
+  font-size: 2rem;
+}
+
+.title__2 {
+  font-family: "Playfair Display SC", "Lora", "Libre Baskerville", "Gloock", "Libre Baskerville", serif;
+  font-size: 4rem;
+}
+
+.title__3 {
+  font-family: "Playfair Display SC", "Lora", "Libre Baskerville", "Gloock", "Libre Baskerville", serif;
+  font-size: 6rem;
+}
+
+.title__4 {
+  font-family: "Playfair Display SC", "Lora", "Libre Baskerville", "Gloock", "Libre Baskerville", serif;
+  font-size: 8rem;
+}
+
+.title__5 {
+  font-family: "Playfair Display SC", "Lora", "Libre Baskerville", "Gloock", "Libre Baskerville", serif;
+  font-size: 10rem;
+}
+
+.title__6 {
+  font-family: "Playfair Display SC", "Lora", "Libre Baskerville", "Gloock", "Libre Baskerville", serif;
+  font-size: 12rem;
+}
+
+.subtitle__1 {
+  font-family: "Charm", "Tangerine", "Quintessential", cursive;
+  font-size: 2rem;
+}
+
+.subtitle__2 {
+  font-family: "Charm", "Tangerine", "Quintessential", cursive;
+  font-size: 4rem;
+}
+
+.subtitle__3 {
+  font-family: "Charm", "Tangerine", "Quintessential", cursive;
+  font-size: 6rem;
+}
+
+.subtitle__4 {
+  font-family: "Charm", "Tangerine", "Quintessential", cursive;
+  font-size: 8rem;
+}
+
+.subtitle__5 {
+  font-family: "Charm", "Tangerine", "Quintessential", cursive;
+  font-size: 10rem;
+}
+
+.subtitle__6 {
+  font-family: "Charm", "Tangerine", "Quintessential", cursive;
+  font-size: 12rem;
+}
+
+.blanco {
+  color: rgb(255, 255, 255);
+}
+
+.amarillo {
+  color: rgb(251, 147, 0);
+}
+
+.rojo {
+  color: rgb(194, 59, 59);
+}
+
+.azul {
+  color: rgb(52, 63, 86);
+}
+
+.blanco__1 {
+  color: rgb(241, 241, 241);
+}
+
+.blanco__2 {
+  color: rgb(227, 227, 227);
+}
+
+.blanco__3 {
+  color: rgb(213, 213, 213);
+}
+
+.blanco__4 {
+  color: rgb(199, 199, 199);
+}
+
+.blanco__5 {
+  color: rgb(185, 185, 185);
+}
+
+.negro__1 {
+  color: rgb(14, 14, 14);
+}
+
+.negro__2 {
+  color: rgb(28, 28, 28);
+}
+
+.negro__3 {
+  color: rgb(42, 42, 42);
+}
+
+.negro__4 {
+  color: rgb(56, 56, 56);
+}
+
+.negro__5 {
+  color: rgb(70, 70, 70);
+}
+
+.bg__blanco, .comentario__para__tutor {
+  background-color: rgb(255, 255, 255);
+}
+
+.bg__amarillo {
+  background-color: rgb(251, 147, 0);
+}
+
+.bg__rojo {
+  background-color: rgb(194, 59, 59);
+}
+
+.bg__azul {
+  background-color: rgb(52, 63, 86);
+}
+
+.navbar__item:hover {
+  color: rgb(251, 147, 0);
+}
+
+.index__section__noticias {
+  padding-bottom: 10px;
+}
+
+.index__section__noticias__item__img {
+  width: 100%;
+}
+
+.index__section__principal {
+  background-color: rgb(227, 227, 227);
+  margin: auto;
+  padding-top: 15px;
+  padding: auto;
+}
+
+.index__section__principal__carousel__item__img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.index__section__principal__carousel__item__title {
+  color: rgba(0, 0, 0, 0.626);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.index__section__principal__carousel__item__subtitle {
+  color: rgba(0, 0, 0, 0.632);
+}
+
+.index__section__libros {
+  background-color: rgb(227, 227, 227);
+  padding-bottom: 10px;
+}
+
+.index__section__libros__grid__item__imagen {
+  width: 100%;
+}
+
+.index__section__imagenes {
+  background-color: rgb(227, 227, 227);
+}
+
+.index__section__imagenes__grid__item {
+  margin: 10px;
+}
+
+.index__section__imagenes__grid__item__imagen {
+  width: 100%;
+}
+
+.index__section__testimonios {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.index__section__testimonios__container {
+  width: 66%;
+  height: 518px;
+  border: solid black 1px;
+  margin: auto;
+  overflow: scroll;
+}
+
+.index__section__testimonios__container__date {
+  display: flex;
+  justify-content: end;
+}
+
+.index__section__articulos__grid__item__imagen {
+  width: 100%;
+}
+
+.index__section__contacto {
+  background-color: rgb(227, 227, 227);
+}
+
+.articulos {
+  color: red;
+}
+.articulos .container {
+  background-color: white;
+}
+.articulos .container .item {
+  margin: auto;
+}
+.articulos .container .item .imagen {
+  padding: auto;
+}
+.articulos .container .item .titulo {
+  display: flex;
+}
+.articulos .container .item .subtitulo {
+  text-decoration: none;
+}
+.articulos .container .item .texto {
+  text-align: center;
+}
+
+.comentario__para__tutor {
+  width: 400px;
+  height: auto;
+  margin: auto;
+  padding: auto;
+  background-color: khaki;
+  border: solid black 1px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.pinkwhite-text {
+  color: rgb(249, 202, 202);
+}
+
+#uprow {
+  margin: 10px;
+  position: fixed;
+  left: 90%;
+  bottom: 5%;
+}
+
+h2 a {
+  color: black;
+  text-decoration: none;
+}
+
+.index__section__videos {
+  background-color: rgb(230, 230, 230);
+  padding-bottom: 30px;
+}
+
+.index__section__videos__container {
+  margin: 100;
+  padding: auto;
+  text-align: center;
+}
+
+.index__section__videos__video {
+  width: 66%;
+  height: 500px;
+}
+
+.noticias__main__grid__row {
+  margin-top: 5%;
+}
+
+.noticias__main__grid__row:last-of-type {
+  margin-bottom: 5%;
+}
+
+/* MEDIAQUERIES */
+@media screen and (max-width: 576px) {
+  .index__section__imagenes__grid__item {
+    margin: 0px;
+    padding: 1px;
+  }
+  .index__section__libros__grid__item {
+    margin-bottom: 5px;
+  }
+  #uprow {
+    left: 85%;
+    bottom: 5%;
+  }
+  .index__section__noticias__item__img {
+    margin-top: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */

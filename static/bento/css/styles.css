@@ -1,0 +1,844 @@
+@charset "UTF-8";
+.titulo {
+  font-family: titulo;
+}
+
+.subtitulo {
+  font-family: subtitulo;
+}
+
+.texto {
+  font-family: texto;
+}
+
+.articulos {
+  color: red;
+}
+.articulos .container {
+  background-color: white;
+}
+.articulos .container .item {
+  margin: auto;
+}
+.articulos .container .item .imagen {
+  padding: auto;
+}
+.articulos .container .item .titulo {
+  display: flex;
+}
+.articulos .container .item .subtitulo {
+  text-decoration: none;
+}
+.articulos .container .item .texto {
+  text-align: center;
+}
+
+/* demostración de habilidades con ciclos for */
+/* titulos */
+.title__1 {
+  font-family: "Playfair Display SC", "Lora", "Libre Baskerville", "Gloock", "Libre Baskerville", serif;
+  font-size: 2rem;
+}
+
+.title__2 {
+  font-family: "Playfair Display SC", "Lora", "Libre Baskerville", "Gloock", "Libre Baskerville", serif;
+  font-size: 4rem;
+}
+
+.title__3 {
+  font-family: "Playfair Display SC", "Lora", "Libre Baskerville", "Gloock", "Libre Baskerville", serif;
+  font-size: 6rem;
+}
+
+.title__4 {
+  font-family: "Playfair Display SC", "Lora", "Libre Baskerville", "Gloock", "Libre Baskerville", serif;
+  font-size: 8rem;
+}
+
+.title__5 {
+  font-family: "Playfair Display SC", "Lora", "Libre Baskerville", "Gloock", "Libre Baskerville", serif;
+  font-size: 10rem;
+}
+
+.title__6 {
+  font-family: "Playfair Display SC", "Lora", "Libre Baskerville", "Gloock", "Libre Baskerville", serif;
+  font-size: 12rem;
+}
+
+/* subtitulos */
+.subtitle__1 {
+  font-family: "Charm", "Tangerine", "Quintessential", cursive;
+  font-size: 2rem;
+}
+
+.subtitle__2 {
+  font-family: "Charm", "Tangerine", "Quintessential", cursive;
+  font-size: 4rem;
+}
+
+.subtitle__3 {
+  font-family: "Charm", "Tangerine", "Quintessential", cursive;
+  font-size: 6rem;
+}
+
+.subtitle__4 {
+  font-family: "Charm", "Tangerine", "Quintessential", cursive;
+  font-size: 8rem;
+}
+
+.subtitle__5 {
+  font-family: "Charm", "Tangerine", "Quintessential", cursive;
+  font-size: 10rem;
+}
+
+.subtitle__6 {
+  font-family: "Charm", "Tangerine", "Quintessential", cursive;
+  font-size: 12rem;
+}
+
+/* foreach con map*/
+.blanco {
+  color: rgb(255, 255, 255);
+}
+
+.amarillo {
+  color: rgb(251, 147, 0);
+}
+
+.rojo {
+  color: rgb(194, 59, 59);
+}
+
+.azul {
+  color: rgb(52, 63, 86);
+}
+
+.blanco__1 {
+  color: rgb(241, 241, 241);
+}
+
+.blanco__2 {
+  color: rgb(227, 227, 227);
+}
+
+.blanco__3 {
+  color: rgb(213, 213, 213);
+}
+
+.blanco__4 {
+  color: rgb(199, 199, 199);
+}
+
+.blanco__5 {
+  color: rgb(185, 185, 185);
+}
+
+.negro__1 {
+  color: rgb(14, 14, 14);
+}
+
+.negro__2 {
+  color: rgb(28, 28, 28);
+}
+
+.negro__3 {
+  color: rgb(42, 42, 42);
+}
+
+.negro__4 {
+  color: rgb(56, 56, 56);
+}
+
+.negro__5 {
+  color: rgb(70, 70, 70);
+}
+
+/* foreach con lista */
+.bg__blanco, .comentario__para__tutor {
+  background-color: rgb(255, 255, 255);
+}
+
+.bg__amarillo {
+  background-color: rgb(251, 147, 0);
+}
+
+.bg__rojo {
+  background-color: rgb(194, 59, 59);
+}
+
+.bg__azul {
+  background-color: rgb(52, 63, 86);
+}
+
+/* funciones */
+/* include para funciones y extend para para clases*/
+.comentario__para__tutor {
+  width: 400px;
+  height: auto;
+  margin: auto;
+  padding: auto;
+  background-color: khaki;
+  border: solid black 1px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.titulo {
+  font-family: titulo;
+}
+
+.subtitulo {
+  font-family: subtitulo;
+}
+
+.texto {
+  font-family: texto;
+}
+
+.articulos {
+  color: red;
+}
+.articulos .container {
+  background-color: white;
+}
+.articulos .container .item {
+  margin: auto;
+}
+.articulos .container .item .imagen {
+  padding: auto;
+}
+.articulos .container .item .titulo {
+  display: flex;
+}
+.articulos .container .item .subtitulo {
+  text-decoration: none;
+}
+.articulos .container .item .texto {
+  text-align: center;
+}
+
+/* demostración de habilidades con ciclos for */
+/* titulos */
+.title__1 {
+  font-family: "Playfair Display SC", "Lora", "Libre Baskerville", "Gloock", "Libre Baskerville", serif;
+  font-size: 2rem;
+}
+
+.title__2 {
+  font-family: "Playfair Display SC", "Lora", "Libre Baskerville", "Gloock", "Libre Baskerville", serif;
+  font-size: 4rem;
+}
+
+.title__3 {
+  font-family: "Playfair Display SC", "Lora", "Libre Baskerville", "Gloock", "Libre Baskerville", serif;
+  font-size: 6rem;
+}
+
+.title__4 {
+  font-family: "Playfair Display SC", "Lora", "Libre Baskerville", "Gloock", "Libre Baskerville", serif;
+  font-size: 8rem;
+}
+
+.title__5 {
+  font-family: "Playfair Display SC", "Lora", "Libre Baskerville", "Gloock", "Libre Baskerville", serif;
+  font-size: 10rem;
+}
+
+.title__6 {
+  font-family: "Playfair Display SC", "Lora", "Libre Baskerville", "Gloock", "Libre Baskerville", serif;
+  font-size: 12rem;
+}
+
+/* subtitulos */
+.subtitle__1 {
+  font-family: "Charm", "Tangerine", "Quintessential", cursive;
+  font-size: 2rem;
+}
+
+.subtitle__2 {
+  font-family: "Charm", "Tangerine", "Quintessential", cursive;
+  font-size: 4rem;
+}
+
+.subtitle__3 {
+  font-family: "Charm", "Tangerine", "Quintessential", cursive;
+  font-size: 6rem;
+}
+
+.subtitle__4 {
+  font-family: "Charm", "Tangerine", "Quintessential", cursive;
+  font-size: 8rem;
+}
+
+.subtitle__5 {
+  font-family: "Charm", "Tangerine", "Quintessential", cursive;
+  font-size: 10rem;
+}
+
+.subtitle__6 {
+  font-family: "Charm", "Tangerine", "Quintessential", cursive;
+  font-size: 12rem;
+}
+
+/* foreach con map*/
+.blanco {
+  color: rgb(255, 255, 255);
+}
+
+.amarillo {
+  color: rgb(251, 147, 0);
+}
+
+.rojo {
+  color: rgb(194, 59, 59);
+}
+
+.azul {
+  color: rgb(52, 63, 86);
+}
+
+.blanco__1 {
+  color: rgb(241, 241, 241);
+}
+
+.blanco__2 {
+  color: rgb(227, 227, 227);
+}
+
+.blanco__3 {
+  color: rgb(213, 213, 213);
+}
+
+.blanco__4 {
+  color: rgb(199, 199, 199);
+}
+
+.blanco__5 {
+  color: rgb(185, 185, 185);
+}
+
+.negro__1 {
+  color: rgb(14, 14, 14);
+}
+
+.negro__2 {
+  color: rgb(28, 28, 28);
+}
+
+.negro__3 {
+  color: rgb(42, 42, 42);
+}
+
+.negro__4 {
+  color: rgb(56, 56, 56);
+}
+
+.negro__5 {
+  color: rgb(70, 70, 70);
+}
+
+/* foreach con lista */
+.bg__blanco, .comentario__para__tutor {
+  background-color: rgb(255, 255, 255);
+}
+
+.bg__amarillo {
+  background-color: rgb(251, 147, 0);
+}
+
+.bg__rojo {
+  background-color: rgb(194, 59, 59);
+}
+
+.bg__azul {
+  background-color: rgb(52, 63, 86);
+}
+
+/* funciones */
+/* include para funciones y extend para para clases*/
+.comentario__para__tutor {
+  width: 400px;
+  height: auto;
+  margin: auto;
+  padding: auto;
+  background-color: khaki;
+  border: solid black 1px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.navbar__container {
+  background: linear-gradient(rgb(199, 199, 199), rgb(227, 227, 227));
+}
+
+.navnar__logo {
+  width: 90px;
+  height: 34px;
+  padding-bottom: 4px;
+}
+
+.navbar__item, .footer__item__ancor:hover, .footer__mensaje__ancor:hover {
+  color: black;
+}
+
+.navnar__logo:hover {
+  color: rgb(251, 147, 0);
+  width: 96px;
+  height: 41px;
+  border-radius: 5px;
+}
+
+.navbar__item:hover, .footer__item__ancor:hover, .footer__mensaje__ancor:hover {
+  color: rgb(251, 147, 0);
+  border-radius: 5px;
+  font-size: large;
+}
+
+.navbar__item:active, .footer__item__ancor:active:hover, .footer__mensaje__ancor:active:hover {
+  color: rgb(194, 59, 59);
+}
+
+/*======================.index__section__footer=========================*/
+/*======================.index__section__footer=========================*/
+/*======================.index__section__footer=========================*/
+.footer__container {
+  color: black;
+  background: linear-gradient(rgb(227, 227, 227), rgb(199, 199, 199));
+}
+
+.footer__mensaje__ancor {
+  text-decoration: none;
+  color: rgb(42, 42, 42);
+}
+
+.footer__mensaje__ancor:hover {
+  color: black;
+}
+
+.footer__item__ancor {
+  text-decoration: none;
+  color: rgb(42, 42, 42);
+}
+
+.footer__container__copyright {
+  background: linear-gradient(rgb(199, 199, 199), rgb(113, 113, 113));
+}
+
+/*==================.index__section__noticias========================*/
+/*==================.index__section__noticias========================*/
+/*==================.index__section__noticias========================*/
+.index__section__noticias {
+  padding-bottom: 10px;
+}
+
+.index__section__noticias__item, .noticiasallo__main__grid__item {
+  padding-bottom: 10px;
+}
+
+.index__section__noticias__item__img, .noticiasallo__main__grid__item__imagen {
+  width: 100%;
+}
+
+.index__section__noticias__item:hover, .noticiasallo__main__grid__item:hover {
+  background-color: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  width: 104%;
+  transition: width 2s;
+}
+
+/*==================.index__section__principal========================*/
+/*==================.index__section__principal========================*/
+/*==================.index__section__principal========================*/
+.index__section__principal {
+  background: linear-gradient(rgb(227, 227, 227), white);
+  margin: auto;
+  padding-top: 15px;
+  padding: auto;
+}
+
+.index__section__principal__carousel__item__img {
+  width: 100%;
+  overflow: hidden;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.index__section__principal__carousel__item__img:hover {
+  width: 103%;
+  overflow: hidden;
+}
+
+.index__section__principal__carousel__item__title, .index__section__principal__carousel__item__title__negative {
+  color: rgba(0, 0, 0, 0.626);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.index__section__principal__carousel__item__title__negative {
+  color: rgba(255, 255, 255, 0.626);
+}
+
+.index__section__principal__carousel__item__title:hover, .index__section__principal__carousel__item__title__negative:hover {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 5rem;
+}
+
+.index__section__principal__carousel__item__title__negative:hover {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 5rem;
+}
+
+.index__section__principal__carousel__item__subtitle, .index__section__principal__carousel__item__subtitle__negative {
+  color: rgba(0, 0, 0, 0.626);
+}
+
+.index__section__principal__carousel__item__subtitle__negative {
+  color: rgba(255, 255, 255, 0.626);
+}
+
+.index__section__principal__carousel__item__subtitle:hover, .index__section__principal__carousel__item__subtitle__negative:hover {
+  color: rgba(0, 0, 0, 0.632);
+  font-size: 1.1rem;
+}
+
+.index__section__principal__carousel__item__subtitle__negative:hover {
+  color: rgba(255, 255, 255, 0.632);
+  font-size: 1.1rem;
+}
+
+/*=====================.index__section__libros=========================*/
+/*=====================.index__section__libros=========================*/
+/*=====================.index__section__libros=========================*/
+.index__section__libros {
+  padding-bottom: 10px;
+}
+
+.index__section__libros__grid__item, .librosallo__main__grid__item {
+  padding-bottom: 20px;
+}
+
+.index__section__libros__grid__item:hover, .librosallo__main__grid__item:hover {
+  background-color: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  width: 105%;
+}
+
+.index__section__libros__grid__item__imagen, .librosallo__main__grid__item__imagen {
+  width: 100%;
+}
+
+/*=======================.index__section__imagenes====================*/
+/*=======================.index__section__imagenes====================*/
+/*=======================.index__section__imagenes====================*/
+.index__section__imagenes {
+  padding-bottom: 30px;
+}
+
+.index__section__imagenes__grid__item, .imagenesallo__main__grid__item {
+  padding-bottom: 5px;
+}
+
+.index__section__imagenes__grid__item:hover, .imagenesallo__main__grid__item:hover {
+  width: 105%;
+}
+
+.index__section__imagenes__grid__item__imagen, .imagenesallo__main__grid__item__imagen {
+  width: 100%;
+}
+
+/*==================.index__section__testimonios========================*/
+/*==================.index__section__testimonios========================*/
+/*==================.index__section__testimonios========================*/
+.index__section__testimonios {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.index__section__testimonios__container, .testimoniosallo__item {
+  width: 66%;
+  height: 518px;
+  padding: 10px;
+  margin: auto;
+  overflow: scroll;
+  margin-bottom: 15px;
+}
+
+.index__section__testimonios__container:hover, .testimoniosallo__item:hover {
+  background-color: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+}
+
+.index__section__testimonios__container__date, .testimoniosallo__item__date {
+  display: flex;
+  justify-content: end;
+}
+
+.index__section__testimonios__vermas, .index__section__articulos__vermas, .index__section__noticias__vermas, .index__section__libros__vermas {
+  text-decoration: underline;
+}
+
+/*======================.index__section__articulos======================*/
+/*======================.index__section__articulos======================*/
+/*======================.index__section__articulos======================*/
+.index__section__articulos {
+  background: white;
+}
+
+.index__section__articulos__container, .articulosallo__main__container {
+  padding-bottom: 5px;
+}
+
+.index__section__articulos__item:hover {
+  background-color: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  width: 105%;
+}
+
+.index__section__articulos__item__imagen {
+  width: 100%;
+}
+
+/*=======================.index__section__contacto====================*/
+/*=======================.index__section__contacto====================*/
+/*=======================.index__section__contacto====================*/
+.index__section__contacto {
+  background: linear-gradient(white, rgb(227, 227, 227));
+}
+
+.nosotros__section {
+  margin: auto;
+  margin-top: auto;
+  width: 80%;
+  padding: 30px;
+}
+
+/*=========================contacto__page==============================*/
+/*=========================contacto__page==============================*/
+/*=========================contacto__page==============================*/
+.contacto__section {
+  width: 66%;
+  margin: auto;
+}
+
+.contacto__main:hover {
+  background-color: rgb(227, 227, 227);
+}
+
+.contacto__section__item__textarea {
+  height: 200px;
+}
+
+.testimonios__section__testimonios {
+  margin: auto;
+  padding: 20px;
+}
+
+.index__section__testimonios__container, .testimoniosallo__item {
+  border-radius: 5px;
+}
+
+/*=========================benedicto__page==============================*/
+/*=========================benedicto__page==============================*/
+/*=========================benedicto__page==============================*/
+.benedicto__main__section {
+  width: 80%;
+  margin: auto;
+}
+
+.benedicto__img__escudo {
+  width: 70%;
+}
+
+.benedicto__img__benedicto {
+  width: 100%;
+}
+
+/*=======================allobjects__articulos==========================*/
+/*=======================allobjects__articulos==========================*/ /*=======================allobjects__articulos===========================*/
+/*=======================allobjects__articulos==========================*/
+.articulosallo__main__container {
+  gap: 200px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.articulosallo__main__grid__item {
+  padding-top: 30px;
+}
+
+.articulosallo__main__grid__item:hover {
+  border-radius: 10px;
+  width: 105%;
+}
+
+/*=======================allobjects__noticias========================*/
+/*=======================allobjects__noticias========================*/
+/*=======================allobjects__noticias========================*/
+.noticiasallo__main__container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.noticiasallo__main__grid__row {
+  padding-top: 30px;
+}
+
+.noticiasallo__main__grid__item:hover {
+  background-color: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  border-radius: 10px;
+}
+
+.noticiasallo__main__grid__item__subtitulo {
+  padding-bottom: 20px;
+}
+
+/*=======================allobjects__libros===========================*/
+/*=======================allobjects__libros===========================*/
+/*=======================allobjects__libros===========================*/
+.librosallo__main__container {
+  padding-top: 30px;
+}
+
+.librosallo__main__titulo {
+  padding-top: 30px;
+}
+
+.librosallo__main__grid__row {
+  padding-bottom: 30px;
+}
+
+.librosallo__main__grid__item:hover {
+  border-radius: 30px;
+}
+
+.librosallo__main__grid__item__imagen:hover {
+  width: 101%;
+}
+
+/*=====================allobjects__testimonios========================*/
+/*=====================allobjects__testimonios========================*/
+/*=====================allobjects__testimonios========================*/
+.testimoniosallo__item {
+  margin-bottom: 30px;
+  width: 80%;
+}
+
+.testimoniosallo__item:first-of-type {
+  margin-top: 30px;
+}
+
+/*=======================allobjects__imagenes===========================*/
+/*=======================allobjects__imagenes===========================*/
+/*=======================allobjects__imagenes===========================*/
+.imagenesallo__main__container {
+  width: 80%;
+  margin: auto;
+}
+
+.imagenesallo__main__grid__row {
+  padding-bottom: 30px;
+}
+
+.imagenesallo__main__grid__row:first-of-type {
+  padding-top: 30px;
+}
+
+.imagenesallo__main__grid__item {
+  padding-bottom: 10px;
+}
+
+.imagenesallo__main__grid__item:hover {
+  background-color: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  border-radius: 10px;
+  width: 103%;
+}
+
+/*===========================MEDIAQUERIES============================ */
+/*===========================MEDIAQUERIES============================ */
+/*===========================MEDIAQUERIES============================ */
+@media screen and (max-width: 576px) {
+  .nosotros__section {
+    width: 100%;
+  }
+  .index__section__principal__carousel__item__img {
+    width: 100%;
+    height: 250px;
+  }
+  .index__section__imagenes__grid__item, .imagenesallo__main__grid__item {
+    margin: 0px;
+    padding: 1px;
+  }
+  .index__section__libros__grid__item, .librosallo__main__grid__item {
+    margin-bottom: 5px;
+  }
+  #uprow {
+    display: none;
+    left: 30%;
+    bottom: 5%;
+  }
+  .index__section__noticias__titulo a {
+    font-size: 2.5rem;
+  }
+  .index__section__noticias__titulo a:hover {
+    font-size: 2.5rem;
+  }
+  .index__section__libros__grid__item, .librosallo__main__grid__item {
+    padding: 5px;
+  }
+  .index__section__noticias__item__img, .noticiasallo__main__grid__item__imagen {
+    margin-top: 20px;
+  }
+  .index__section__imagenes__grid__item__imagen, .imagenesallo__main__grid__item__imagen {
+    width: 90%;
+    padding: 5px;
+  }
+  .index__section__imagenes__grid__item__imagen:hover, .imagenesallo__main__grid__item__imagen:hover {
+    width: 91%;
+  }
+}
+.index__section__testimonios__container, .testimoniosallo__item {
+  width: 90%;
+  margin: auto;
+}
+
+@media screen and (min-width: 773px) and (max-width: 992px) {
+  .index__section__principal__carousel__item__title:hover, .index__section__principal__carousel__item__title__negative:hover {
+    font-size: 4rem;
+  }
+  .index__section__noticias__titulo a:hover {
+    font-size: 4.3rem;
+  }
+}
+main {
+  background: linear-gradient(rgb(227, 227, 227), white, white, white, rgb(227, 227, 227));
+}
+
+.navbar-nav.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+#uprow {
+  margin: 10px;
+  position: fixed;
+  left: 90%;
+  bottom: 5%;
+}
+
+#uprow:hover {
+  background-color: rgba(0, 0, 0, 0.252);
+}
+
+/* modificación necesaria por los titulos h2 a (en sections) en index */
+h2 a {
+  color: black;
+  text-decoration: none;
+}
+
+.noticias__main__grid__row {
+  margin-top: 5%;
+}
+
+.noticias__main__grid__row:last-of-type {
+  margin-bottom: 5%;
+}
+
+/*# sourceMappingURL=styles.css.map */

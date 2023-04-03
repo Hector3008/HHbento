@@ -1,0 +1,63 @@
+@import "variables";
+@import "navbar";
+@import "footer";
+@import "index__section__noticias";
+@import "index__section__principal";
+@import "index__section__libros";
+@import "index__section__imagenes";
+@import "index__section__testimonios";
+@import "index__section__articulos";
+@import "index__section__contacto";
+@import "nosotros";
+@import "contacto";
+@import "testimonios";
+@import "benedicto";
+@import "allobjects__articulos";
+@import "allobjects__noticias";
+@import "allobjects__libros";
+@import "allobjects__testimonios";
+@import "allobjects__imagenes";
+@import "mediaqueries";
+
+main{
+  background: linear-gradient($white__2, white, white, white, $white__2)
+}
+
+.navbar-nav.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+
+#uprow {
+  margin: 10px;
+  position: fixed;
+  left: 90%;
+  bottom: 5%;
+}
+
+#uprow:hover {
+  background-color: rgba(0, 0, 0, 0.252);
+}
+
+/* modificación necesaria por los titulos h2 a (en sections) en index */
+h2 a {
+  color: black;
+  text-decoration: none;
+}
+
+
+
+.noticias__main__grid__row {
+  margin-top: 5%;
+}
+
+
+.noticias__main__grid__row:last-of-type {
+  margin-bottom: 5%;
+}
+
+
+
+

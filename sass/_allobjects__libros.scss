@@ -1,0 +1,48 @@
+/*=======================allobjects__libros===========================*/
+/*=======================allobjects__libros===========================*/
+/*=======================allobjects__libros===========================*/
+
+///////////////////////////////////////////////////////////////////////
+//estas clases son similares a las que están en index./////////////////
+//por lo cual figura una linea debajo de la clase análoga en index.////
+///////////////////////////////////////////////////////////////////////
+/// 
+//.index__section__libros__container container{}
+.librosallo__main__container{
+  padding-top: 30px;
+}
+
+.librosallo__main__titulo{
+  padding-top: 30px;
+}
+
+//.index__section__libros__grid__row{}
+.librosallo__main__grid__row{
+  padding-bottom: 30px;
+}
+
+//.index__section__librosgrid__col{}
+//.librosallo__main__grid__col{}
+
+//.index__section__libros__grid__item {padding-bottom: 20px;}
+.librosallo__main__grid__item{@extend .index__section__libros__grid__item;}
+
+//.index__section__libros__grid__item:hover {background-color: $shadow;}
+.librosallo__main__grid__item:hover{
+  border-radius: 30px;
+}
+
+//.index__section__libros__grid__item__imagen {width: 100%;}
+.librosallo__main__grid__item__imagen{@extend .index__section__libros__grid__item__imagen;}
+
+//.index__section__libros__grid__item__imagen:hover {width: 101%;}
+.librosallo__main__grid__item__imagen:hover{width: 101%;}
+
+// .index__section__libros__grid__item__titulo{}
+// .librosallo__main__grid__item__titulo{}
+
+// .index__section__libros__item__subtitulo{}
+// .librosallo__main__grid__item__subtitulo{}
+
+// .index__section__libros__item__subtitulo__vermas{}
+// .librosallo__main__grid__item__subtitulo__vermas{}

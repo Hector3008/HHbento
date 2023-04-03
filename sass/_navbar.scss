@@ -1,0 +1,30 @@
+@import "variables";
+
+.navbar__container{
+  background: linear-gradient($white__4,$white__2);
+}
+
+.navnar__logo{
+  width: 90px;
+  height: 34px;
+  padding-bottom: 4px;
+}
+.navbar__item{
+  color: black;
+}
+.navnar__logo:hover{
+  color: $color__2;
+  width: 96px;
+  height: 41px;
+  border-radius: 5px;
+}
+
+.navbar__item:hover {
+  color: $color__2;
+  border-radius: 5px;
+  font-size: large;
+}
+
+.navbar__item:active{
+  color: $color__3;
+}

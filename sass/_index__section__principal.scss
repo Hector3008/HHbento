@@ -1,0 +1,57 @@
+/*==================.index__section__principal========================*/
+/*==================.index__section__principal========================*/
+/*==================.index__section__principal========================*/
+
+.index__section__principal {
+  background: linear-gradient($white__2, white);
+  margin: auto;
+  padding-top: 15px;
+  padding: auto;
+}
+
+//.index__section__principal:hover{}
+
+.index__section__principal__carousel__item__img {
+  width: 100%;
+  overflow: hidden;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px
+}
+.index__section__principal__carousel__item__img:hover {
+  width: 103%;
+  overflow: hidden;
+}
+
+.index__section__principal__carousel__item__title {
+  color: rgba(0, 0, 0, 0.626);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.index__section__principal__carousel__item__title__negative{
+  @extend .index__section__principal__carousel__item__title;
+  color: rgba(255, 255, 255, 0.626);
+}
+
+.index__section__principal__carousel__item__title:hover {
+  color: rgba(0, 0, 0, 0.800);
+  font-size: 5rem;
+  }
+
+.index__section__principal__carousel__item__title__negative:hover{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 5rem;
+}
+.index__section__principal__carousel__item__subtitle{
+  color:rgba(0, 0, 0, 0.626);
+}
+.index__section__principal__carousel__item__subtitle__negative{
+  @extend .index__section__principal__carousel__item__subtitle;
+  color: rgba(255, 255, 255, 0.626);
+}
+.index__section__principal__carousel__item__subtitle:hover {
+  color: rgba(0, 0, 0, 0.632);
+  font-size: 1.1rem;
+}
+.index__section__principal__carousel__item__subtitle__negative:hover{
+    color: rgba(255, 255, 255, 0.632);
+    font-size: 1.1rem;
+}

@@ -1,0 +1,77 @@
+/*=======================allobjects__noticias========================*/
+/*=======================allobjects__noticias========================*/
+/*=======================allobjects__noticias========================*/
+
+///////////////////////////////////////////////////////////////////////
+//estas clases son similares a las que están en index./////////////////
+//por lo cual figura una linea debajo de la clase análoga en index.////
+///////////////////////////////////////////////////////////////////////
+/// 
+//noticiasallo__main{}
+
+.noticiasallo__main__container{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.noticiasallo__main__grid__row{
+  padding-top: 30px
+}
+
+//.noticiasallo__main__grid__col{}
+
+//.index__section__noticias__item{}
+.noticiasallo__main__grid__item{
+  @extend 
+  .index__section__noticias__item;}
+
+.noticiasallo__main__grid__item:hover{
+  background-color: $shadow;
+  border-radius: 10px;
+
+}
+
+.noticiasallo__main__grid__item__imagen{
+  @extend 
+  .index__section__noticias__item__img;}
+
+//.noticiasallo__main__grid__item__imagen:hover{}
+//index__section__noticias__item__titulo
+//.noticiasallo__main__grid__item__titulo{@extend .index__section__noticias__item__titulo;}
+
+//.index__section__noticias__item__subtitulo{}
+.noticiasallo__main__grid__item__subtitulo{
+  padding-bottom: 20px;
+}
+
+
+//.ndex__section__noticias__item__subtitulo__vermas{}
+//.noticiasallo__main__grid__item__subtitulo__vermas{}
+
+
+
+
+
+
+
+
+
+
+//.index__section__noticias {padding-bottom: 10px;}
+//.noticiasallo__main{}
+
+//.index__section__noticias:hover {padding-bottom: 10px; background-color: $shadow;}
+//.noticiasallo__main:hover{}
+
+//.index__section__noticias__container{}
+//.noticiasallo__main__container{}
+
+//.index__section__noticias__item {padding-bottom: 10px;}
+//.noticiasallo__main__item{}
+
+//.index__section__noticias__item__img {width: 100%;}
+//.noticiasallo__main__item{}__img{}
+
+//.index__section__noticias__titulo:hover {font-size: 4.8rem;}
+
+//.index__section__noticias__item:hover {background-color: $shadow;}

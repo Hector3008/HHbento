@@ -1,0 +1,43 @@
+/*=====================allobjects__testimonios========================*/
+/*=====================allobjects__testimonios========================*/
+/*=====================allobjects__testimonios========================*/
+
+///////////////////////////////////////////////////////////////////////
+//estas clases son similares a las que están en index./////////////////
+//por lo cual figura una linea debajo de la clase análoga en index.////
+///////////////////////////////////////////////////////////////////////
+
+
+//.testimonios__section__testimonios{}
+//.testimoniosallo__main{}
+
+//.index__section__testimonios__container{}
+
+//.testimoniosallo__main__container{}
+
+//.testimoniosallo__main__row{}
+
+//.testimoniosallo__main__col{}
+
+
+.testimoniosallo__item{
+  @extend .index__section__testimonios__container;
+  margin-bottom: 30px;
+  width: 80%;
+}
+
+.testimoniosallo__item:first-of-type{
+  margin-top: 30px;
+}
+//.index__section__testimonios__container:hover{background-color: $white__1;}
+//.testimoniosallo__item:hover {}
+
+//.index__section__testimonios__container__title{}
+//.testimoniosallo__item__titulo{}
+
+//.index__section__testimonios__container__text{}
+//.testimoniosallo__item__texto{}
+
+//.index__section__testimonios__container__date{display: flex; justify-content: end;}
+
+.testimoniosallo__item__date{@extend .index__section__testimonios__container__date;}

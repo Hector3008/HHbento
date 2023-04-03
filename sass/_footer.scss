@@ -1,0 +1,29 @@
+/*======================.index__section__footer=========================*/
+/*======================.index__section__footer=========================*/
+/*======================.index__section__footer=========================*/
+
+.footer__container{
+  color: black;
+  background: linear-gradient($white__2, $white__4);
+}
+
+.footer__mensaje__ancor{
+    text-decoration: none;
+    color: $black__3;
+}
+.footer__mensaje__ancor:hover{
+  @extend .navbar__item;
+  color: black;
+}
+
+.footer__item__ancor{
+  text-decoration: none;
+  color: $black__3;
+}
+.footer__item__ancor:hover{
+  @extend .navbar__item;
+}
+
+.footer__container__copyright{
+  background: linear-gradient($white__4, rgb(113, 113, 113));
+}

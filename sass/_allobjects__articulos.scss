@@ -1,0 +1,46 @@
+/*=======================allobjects__articulos==========================*/
+/*=======================allobjects__articulos==========================*//*=======================allobjects__articulos===========================*/
+/*=======================allobjects__articulos==========================*/
+
+///////////////////////////////////////////////////////////////////////
+//estas clases son similares a las que están en index./////////////////
+//por lo cual figura una linea debajo de la clase análoga en index.////
+///////////////////////////////////////////////////////////////////////
+/// 
+//.index__section__articulos__container {padding-bottom: 20px;}
+
+.articulosallo__main__container{
+  @extend .index__section__articulos__container;
+  gap: 200px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+// .index__section__articulos__item{}
+
+.articulosallo__main__grid__item{
+  padding-top: 30px;
+}
+
+.articulosallo__main__grid__item:hover{
+  border-radius: 10px;
+  width: 105%;
+}
+
+
+
+//.index__section__articulos__item__imagen {width: 100%;}
+//.articulosallo__main__item_imagen{}
+
+//.index__section__articulos__item__imagen:hover {width: 101%;}
+//.articulosallo__main__item__imagen:hover{}
+
+//.index__section__articulos__item__titulo{}
+//.articulosallo__main__item__titulo{}
+
+//.index__section__articulos__item__texto{}
+//.articulosallo__main__item__texto{}
+
+//.index__section__articulos__item__texto__vermas{}
+//.articulosallo__main__item__texto__vermas{}

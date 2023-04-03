@@ -1,0 +1,161 @@
+.comentario__para__tutor {
+  padding: 5px;
+  margin: 10px;
+  background-color: khaki;
+  border: solid black 1px;
+  width: 400px;
+
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.navbar__item:hover{
+color: darkgoldenrod;
+}
+
+.pinkwhite-text {
+  color: rgb(249, 202, 202);
+}
+
+#uprow {
+  margin: 10px;
+  position: fixed;
+  left: 90%;
+  bottom: 5%;
+}
+
+h2 a{
+  color: black;
+  text-decoration: none;
+}
+
+.index__section__principal {
+  background-color: rgb(230, 230, 230);
+  margin: auto;
+  padding-top: 15px;
+  padding: auto;
+}
+
+.index__section__principal__carousel__item__img {
+  width: 100%;
+
+  overflow: hidden;
+}
+
+.index__section__principal__carousel__item__title {
+  color: rgba(0, 0, 0, 0.626);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.index__section__principal__carousel__item__subtitle {
+  color: rgba(0, 0, 0, 0.632);
+
+}
+
+.index__section__noticias {
+  padding-bottom: 10px;
+}
+
+.index__section__noticias__item__img{
+  width: 100%;
+}
+
+.index__section__libros{
+  background-color: rgb(230, 230, 230);
+  padding-bottom: 10px;
+}
+
+.index__section__libros__grid__item__imagen{
+  width: 100%;
+}
+
+.index__section__testimonios{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.index__section__testimonios__container{
+  width: 66%;
+  height: 518px;
+  border: solid black 1px;
+  margin: auto;
+  overflow: scroll
+
+}
+
+.index__section__testimonios__container__date{
+  display: flex;
+  justify-content: end;
+}
+
+.index__section__imagenes{
+  background-color: rgb(230, 230, 230);
+}
+
+.index__section__imagenes__grid__item{
+  margin: 10px;
+}
+.index__section__imagenes__grid__item__imagen{
+  width: 100%;
+}
+
+.index__section__videos{  
+  background-color: rgb(230, 230, 230);
+  padding-bottom: 30px;
+}
+
+.index__section__videos__container{
+  margin: 100;
+  padding: auto;
+  text-align: center;
+}
+
+.index__section__videos__video{
+  width:66%; 
+  height:500px;
+}
+
+.index__section__articulos__grid__item__imagen{
+  width: 100%;
+}
+
+.noticias__main__grid__row{
+  margin-top: 5%;
+}
+
+.noticias__main__grid__row:last-of-type{
+  margin-bottom: 5%;
+}
+
+/* MEDIAQUERIES */
+
+
+@media screen and (max-width: 576px) {
+  .index__section__imagenes__grid__item{ 
+    margin: 0px;
+    padding: 1px;
+  }
+  .index__section__libros__grid__item{
+    margin-bottom: 5px;
+  }
+
+  #uprow {
+
+    left: 85%;
+    bottom: 5%;
+  }
+  .index__section__noticias__item__img{
+    margin-top: 20px;
+  }
+}
+
+@media screen and(min-width: 577px) {}
+
+@media screen and(min-width: 768px) {}
+
+@media screen and(min-width: 992px) {}
+
+@media screen and(min-width: 1200px) {}
+
+@media screen and(min-width: 1400px) {}

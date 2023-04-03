@@ -1,0 +1,47 @@
+/*=======================allobjects__imagenes===========================*/
+/*=======================allobjects__imagenes===========================*/
+/*=======================allobjects__imagenes===========================*/
+
+///////////////////////////////////////////////////////////////////////
+//estas clases son similares a las que están en index./////////////////
+//por lo cual figura una linea debajo de la clase análoga en index.////
+///////////////////////////////////////////////////////////////////////
+/// 
+//.index__section__imagenes {background-color: $white__2;}
+//.imagenesallo__main{}
+
+//.index__section__imagenes:hover {background-color: $shadow;}
+//.imagenesallo__main:hover{background-color: $shadow}
+
+// .index__section__imagenes__container{}
+.imagenesallo__main__container{
+  width: 80%;
+  margin: auto;
+}
+
+.imagenesallo__main__grid__row{
+  padding-bottom: 30px;
+}
+.imagenesallo__main__grid__row:first-of-type{
+  padding-top: 30px;
+}
+// .imagenesallo__main__grid__col{}
+
+
+// .index__section__imagenes__grid__item {margin: 10px;}
+.imagenesallo__main__grid__item{
+  @extend .index__section__imagenes__grid__item;
+   padding-bottom: 10px;}
+
+.imagenesallo__main__grid__item:hover{
+  background-color: $shadow;
+  border-radius: 10px;
+  width: 103%
+}
+//.index__section__imagenes__grid__item__imagen {width: 100%;}
+.imagenesallo__main__grid__item__imagen{@extend.index__section__imagenes__grid__item__imagen;}
+
+//.index__section__imagenes__grid__item__imagen:hover {width: 101%;}
+
+
+//.imagenesallo__main__grid__item__leyenda{}

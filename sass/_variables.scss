@@ -1,0 +1,165 @@
+//====================================================================//
+//==========DEMOSTRACION DE HABILIDADES EN SCSS: VARIABLES============//
+//============FUNCIONES, MAPS, MIXING, NESTING, ETC, ETC==============//
+//====================================================================//
+
+
+//variables
+$shadow__1:rgba(0, 0, 0, 0.127);
+$shadow: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.000), rgba(0, 0, 0, 0.000), rgba(0, 0, 0, 0.200));
+//colores
+
+$color__1: rgb(255, 255, 255);
+$color__2: rgb(251, 147, 0);
+$color__3: rgb(194, 59, 59);
+$color__4: rgb(52, 63, 86);
+
+//blancos
+
+$white__1: rgb(241, 241, 241);
+$white__2: rgb(227, 227, 227);
+$white__3: rgb(213, 213, 213);
+$white__4: rgb(199, 199, 199);
+$white__5: rgb(185, 185, 185);
+
+//negros
+
+$black__5: rgb(70, 70, 70);
+$black__4: rgb(56, 56, 56);
+$black__3: rgb(42, 42, 42);
+$black__2: rgb(28, 28, 28);
+$black__1: rgb(14, 14, 14);
+
+//fuentes
+
+$f__titular:'Playfair Display SC','Lora','Libre Baskerville', 'Gloock', 'Libre Baskerville',serif,;
+$f__subtitular: 'Charm', 'Tangerine','Quintessential', cursive;
+$f__textual: 'Karma','Baskervville', 'Gilda Display', 'Arapey', serif;
+
+//map
+
+$fonts: (
+  titulo: $f__titular,
+  subtitulo: $f__subtitular,
+  texto: $f__textual,
+);
+
+@each $key,
+$value in $fonts {
+  .#{$key} {
+    font-family: $key;
+  }
+}
+//nesting
+
+.articulos {
+  color: red;
+
+  .container {
+    background-color: white;
+
+    .item {
+      margin: auto;
+
+      .imagen {
+        padding: auto;
+      }
+
+      .titulo {
+        display: flex;
+      }
+
+      .subtitulo {
+        text-decoration: none;
+      }
+
+      .texto {
+        text-align: center;
+      }
+    }
+
+  }
+}
+
+/* demostración de habilidades con ciclos for */
+
+  /* titulos */
+
+@for $i from 1 through 6 {
+  .title__#{$i} {
+    //interpolacion
+    font-family: $f__titular;
+    font-size: $i * 2rem;
+  }
+}
+
+  /* subtitulos */
+
+
+@for $i from 1 through 6 {
+  .subtitle__#{$i} {
+    //interpolacion
+    font-family: $f__subtitular;
+    font-size: $i * 2rem;
+  }
+}
+//map
+
+$colors: (
+  blanco: $color__1,
+  amarillo: $color__2,
+  rojo: $color__3,
+  azul: $color__4,
+
+  blanco__1:$white__1,
+  blanco__2:$white__2,
+  blanco__3:$white__3,
+  blanco__4:$white__4,
+  blanco__5:$white__5,
+
+  negro__1:$black__1,
+  negro__2:$black__2,
+  negro__3:$black__3,
+  negro__4:$black__4,
+  negro__5:$black__5,
+);
+
+
+  /* foreach con map*/
+
+@each $name,
+$color in $colors {
+  .#{$name} {
+    color: $color;
+  }
+}
+
+  /* foreach con lista */
+
+$lista__1: "blanco" $color__1, "amarillo" $color__2, "rojo" $color__3, "azul" $color__4;
+
+@each $name, $color in $lista__1 {
+  .bg__#{$name} {
+  background-color: $color;
+  }
+}
+
+  /* funciones */
+@mixin box-modeling($width, $height, $margin, $padding) {
+  width: $width;
+  height: $height;
+  margin: $margin;
+  padding: $padding;
+}
+  /* include para funciones y extend para para clases*/
+.comentario__para__tutor {
+
+  @include box-modeling(400px, auto, auto, auto);
+  @extend .bg__blanco;
+  background-color: khaki;
+  border: solid black 1px;
+
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}

@@ -1,0 +1,42 @@
+/*=====================.index__section__libros=========================*/
+/*=====================.index__section__libros=========================*/
+/*=====================.index__section__libros=========================*/
+
+.index__section__libros {
+  padding-bottom: 10px;
+}
+//.index__section__libros:hover{}
+
+//.index__section__libros__titulo{}
+
+//.index__section__libros__titulo:hover{ }
+
+//.index__section__libros__container container{}
+
+//.index__section__libros__grid__row{}
+
+//.index__section__librosgrid__col{}
+
+.index__section__libros__grid__item {
+  padding-bottom: 20px;
+}
+
+.index__section__libros__grid__item:hover {
+  background-color: $shadow;
+  width: 105%;
+}
+
+.index__section__libros__grid__item__imagen {
+  width: 100%;
+}
+//.index__section__libros__grid__item__imagen:hover{}
+
+// .index__section__libros__grid__item__titulo{}
+
+// .index__section__libros__item__subtitulo{}
+
+// .index__section__libros__item__subtitulo__vermas{}
+
+.index__section__libros__vermas{
+  @extend .index__section__testimonios__vermas;
+}
