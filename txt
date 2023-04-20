@@ -1,0 +1,21 @@
+La segunda entrega consiste en:
+
+- Todo lo que incluía la primera entrega, agregando:
+
+- Funciones - Declarar e invocar funciones
+
+- Objetos - Crear objetos a partir de una clase
+
+- Arrays - Cargar elementos en un array con metodos vistos en clase
+
+- Funciones de Orden Superior - Utilizar al menos una de los métodos vistos en esta clase de funciones de orden superior I y/o II.
+
+Para que tengas un panorama más preciso:
+
+Usar funciones declaradas por nosotros mismos, en procesos que podamos abstraer, por ejemplo cargar un array con elementos, calcular algún valor como por ejemplo un promedio o la suma total, etc.
+
+Si añadirás una búsqueda o la generaciòn de un nuevo array a partir de un filtro o un map, también hacerlo con la ayuda de una función que definas.
+
+Añadir los conceptos de objetos declarando al menos una clase que represente al conjunto de datos de una entidad de tú proyecto. Es decir, para cargar un array con una colección de elementos de nuestro contexto, que cada uno de estos elementos sea una instancia de una clase que hayas definido previamente.
+
+Para trabajar con arrays, sugerimos que desarrollen un algoritmo que lo implemente con una función, y permitan hacer una carga de éste array, puede ser de un número fijo de elementos o bien una carga dinámica (ambos los vimos en clase). Para conseguir esto, debes usar uno de los dos métodos vistos en clase para agregar elementos a un array.

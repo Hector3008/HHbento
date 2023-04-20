@@ -1,30 +1,29 @@
 //ESTABLEZCO LAS VARIABLES DE CONTROL:
 
-let variabledeControl = true
+let variabledeControl = true;
 let monto = 0;
 let listadeCarrito = "items: ";
 
 //ESTABLEZCO LA FUNCIÓN "AGREGAR A LA LISTA DEL CARRITO":
 
 function agregaralistadecarrito(item) {
-  listadeCarrito = listadeCarrito + item + ", "
+  listadeCarrito = listadeCarrito + item + ", ";
   console.log("se ha agregado el elemento " + item + " a la lista del carrito");
   alert("tu carrito ahora contiene: " + listadeCarrito);
-};
+}
 
 //EMPIEZA EL FORMULARIO CON UN CICLO WHILE
 
 while (variabledeControl) {
-
   //FORMULARIO PARA AGREGAR LIBROS AL CARRITO:
-  let eleccion = prompt("Qué libro deseas sumar al carrito: \n\n  1) DCE, 10$; \t\t 2) CiV, 10$; \t\t 3) SS, 10$; \t\t \n 4) JdN, 80$; \t\t\t 5) IaC, 60$; \t\t 6) LIdJ, 70$; \t\t \n 7) DdlS, 65$; \t\t  8) Emve, 90$; \t 9) EdlL, 50$; \t\t \n 10) GoJC, 70$; \t\t  11) JaC, 5$; \t\t 12) FyR, 40$\n\n (escribe ESC sí deseas salir)\n\n(escribe PAGAR si ya has escogido todo lo que querías)");
+  let eleccion = prompt(
+    "Qué libro deseas sumar al carrito: \n\n  1) DCE, 10$; \t\t 2) CiV, 10$; \t\t 3) SS, 10$; \t\t \n 4) JdN, 80$; \t\t\t 5) IaC, 60$; \t\t 6) LIdJ, 70$; \t\t \n 7) DdlS, 65$; \t\t  8) Emve, 90$; \t 9) EdlL, 50$; \t\t \n 10) GoJC, 70$; \t\t  11) JaC, 5$; \t\t 12) FyR, 40$\n\n (escribe ESC sí deseas salir)\n\n(escribe PAGAR si ya has escogido todo lo que querías)"
+  );
 
   //EMPIEZO CON ESTABLECER EL METODO ESCAPE AL FORMULARIO:
   if (eleccion.toUpperCase() == "ESC") {
-
     alert("Te has salido de nuestro formulario");
-    variabledeControl = false
-
+    variabledeControl = false;
   }
   //FIJO TAMBIÉN EL CÓDIGO DEL VALOR VACÍO:
   else if (eleccion == "") {
@@ -33,7 +32,6 @@ while (variabledeControl) {
 
   //PROSIGO CON EL CÓDIGO DEL METODO PAGAR. quiero pedirle al usuario su nombre, teléfono y dirección. Validando que no ingrese valores en blanco:
   else if (eleccion.toUpperCase() == "PAGAR") {
-
     alert("La operación tendrá un monto de: " + monto + "$");
 
     //asigno variables de control:
@@ -46,10 +44,9 @@ while (variabledeControl) {
       if (nombre == "") {
         console.log("El usuario no ha ingresado ningún nombre");
         alert("no has ingresado ningún nombre");
-      }
-      else {
+      } else {
         console.log("el usuario ha ingresado el nombre: " + nombre);
-        nombrevdc = false
+        nombrevdc = false;
       }
     }
     //ciclo while de dirección:
@@ -58,34 +55,41 @@ while (variabledeControl) {
       if (direccion == "") {
         console.log("El usuario no ha ingresado ninguna dirección");
         alert("no has ingresado ninguna dirección");
-      }
-      else {
+      } else {
         console.log("el usuario ha ingresado la dirección: " + direccion);
-        direccionvdc = false
+        direccionvdc = false;
       }
     }
     //ciclo while de teléfono:
     while (telefonovdc) {
-      telefono = prompt("te contactaremos por whatsapp para tenerte informado de la entrega. Por favor, danos tu número telefónico:");
+      telefono = prompt(
+        "te contactaremos por whatsapp para tenerte informado de la entrega. Por favor, danos tu número telefónico:"
+      );
       if (telefono == "") {
         console.log("El usuario no ha ingresado ningún teléfono");
         alert("no has ingresado ningún teléfono");
-      }
-      else {
+      } else {
         console.log("el usuario ha ingresado el teléfono: " + telefono);
-        telefonovdc = false
+        telefonovdc = false;
       }
     }
     //termino con un alert a modo de factura:
-    alert("Perfecto. la operación ha tenido un monto de " + monto + ". Ha sido hecha a nombre de " + nombre + ". Quien ha dado el número telefónico " + telefono + " como número de contacto. Y su pedido será entregado a la dirección " + direccion)
-    variabledeControl = false
+    alert(
+      "Perfecto. la operación ha tenido un monto de " +
+        monto +
+        ". Ha sido hecha a nombre de " +
+        nombre +
+        ". Quien ha dado el número telefónico " +
+        telefono +
+        " como número de contacto. Y su pedido será entregado a la dirección " +
+        direccion
+    );
+    variabledeControl = false;
 
     //TERMINANDO, FIJO LAS ELECCIONES VÁLIDAS con el importe al monto y el agregado a lista de carrito:
-
   } else if (eleccion == "1") {
     monto = monto + 10;
     agregaralistadecarrito("DCE");
-
   } else if (eleccion == "2") {
     monto = monto + 10;
     agregaralistadecarrito("CiV");
@@ -123,7 +127,6 @@ while (variabledeControl) {
 
   //POR ÚLTIMO, UN ELSE PARA LOS VALORES INVÁLIDOS.
   else {
-    alert("ingresaste un código inválido")
+    alert("ingresaste un código inválido");
   }
-
-};
+}
