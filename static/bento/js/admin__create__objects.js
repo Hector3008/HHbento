@@ -11,6 +11,71 @@ class Producto {
     this.stock = !!parseInt(cantidad);
   }
 
+  /*defino un DELETE para el CRUD*/
+  toDelete(){
+
+    /*relleno con NULL los atributos. 
+    
+    Lo hago de esta manera, para conservar el ID y luego no tener problemas
+    con EL lenght en el array que sirve como BdD.
+  
+    Esto, porque de este lenght genero los ID de nuevos objetos.*/
+    this.tipo = null;
+    this.titulo = null;
+    this.descripcion = null;
+    this.precio = null;
+    this.codigo = null;
+    this.cantidad = null;
+    this.stock = null;
+  }
+
+  //defino los métodos para posteriores READ del CRUD:
+  toRead(){ 
+    return `id: ${this.id}; tipo:${this.tipo}; titulo: ${this.titulo}; descripcion: ${this.descripcion}; precio: ${this.precio}; codigo: ${this.codigo}; cantidad: ${this.cantidad}; stock: ${this.stock}`;
+  }
+
+  toReadId(){return this.id}
+  toReadTipo(){this.tipo}
+  toReadTitulo(){this.titulo}
+  toReadDescripcion(){this.descripcion}
+  toReadPrecio(){this.precio}
+  toReadCodigo(){this.codigo}
+  toReadCantidad(){this.cantidad}
+  toReadStock(){this.stock}
+
+  //defino estos métodos para posteriores UPDATES del CRUD:
+  toUpdate(newTipo, newTitulo, newDescripcion, newPrecio,newCodigo,newCantidad) {
+    this.tipo = newTipo;
+    this.titulo = newTitulo;
+    this.descripcion = newDescripcion;
+    this.precio = newPrecio;
+    this.codigo = newCodigo;
+    this.cantidad = newCantidad;
+  }
+  toUpdateTipo(nuevoValor) {
+    this.tipo = nuevoValor.toUpperCase();
+  }
+
+  toUpdateTitulo(nuevoValor) {
+    this.titulo = nuevoValor.toUpperCase();
+  }
+
+  toUpdateDescripcion(nuevoValor) {
+    this.descripcion = nuevoValor.toUpperCase();
+  }
+
+  toUpdatePrecio(nuevoValor) {
+    this.precio = parseFloat(nuevoValor);
+  }
+
+  toUpdateCodigo(nuevoValor) {
+    this.codigo = nuevoValor.toUpperCase();
+  }
+
+  toUpdateCantidad(nuevoValor) {
+    this.cantidad = parseInt(nuevoValor);
+  }
+
   toString() {
     return this.titulo;
   }
@@ -22,6 +87,7 @@ class Producto {
   toRemovetoStock(cantidadRemovida) {
     this.cantidad = this.cantidad - parseInt(cantidadRemovida);
   }
+
 }
 
 //Hago un array con los productos del carrito:
@@ -141,37 +207,58 @@ let productos = [
 const btn__ver__objetos = document.getElementById("btn__ver__objetos");
 const tabla__objetos = document.getElementById("tabla__objetos");
 
-//localStorage.setItem("productos", JSON.stringify(productos));
+  /*le pregunto al LS si existe el registro productos y si no existe lo creo.
+  Esto, porque debo cargar la lista "productos" al LS e ir agregando productos.
+  Pero, si la genero sin este condicional, se me crea siempre y se me reinicia
+  en cada sesion.
+    */
+if (!localStorage.getItem("productos")) {
+  localStorage.setItem("productos", JSON.stringify(productos))
+};
 
 // defino la variable JSON con la cual voy a iterar:
   let productosJSON = [];
 
   //codeo el evento onclick del "ver objetos"
 btn__ver__objetos.onclick = () => {
-
-
   if (localStorage.getItem("productos")) {
     productosJSON = JSON.parse(localStorage.getItem("productos"));
     productos = productosJSON.map(
-      (element) => new Producto(element.id,element.tipo,element.titulo,element.descripcion,element.precio,element.codigo,element.cantidad)
+      (element) =>
+        new Producto(
+          element.id,
+          element.tipo,
+          element.titulo,
+          element.descripcion,
+          element.precio,
+          element.codigo,
+          element.cantidad
+        )
     );
   }
 
   //creo la tabla de objetos con un ciclo for y NOM
-    for (i in productos) {
-      //creo el elemento <p> </p>
-      let nuevoItem = document.createElement("p");
-      //relleno el elemento <p> </p>
-      nuevoItem.innerText = `titulo: ${productos[i].titulo} precio: ${productos[i].precio} codigo: ${productos[i].codigo} cantidad:  ${productos[i].cantidad}`;
-      tabla__objetos.append(nuevoItem);
-    }
+  for (i in productos) {
+    //creo el elemento <p> </p>
+    let nuevoItem = document.createElement("p");
 
-    //Función por trabajar, con la cual esperaba limpiar la tabla, no supe hacerla :(
-    let cerrarEvento = document.createElement("button");
-    //function CerrarEvento() {}
-    cerrarEvento.innerHTML = "<p onclick='CerrarEvento()'>Cerrar Evento</p>";
-    tabla__objetos.append(cerrarEvento);
-  };
+    //relleno el elemento <p> </p>
+    nuevoItem.innerHTML = `<p> <strong>titulo: </strong>${productos[i].titulo}<strong> precio: </strong>${productos[i].precio}<strong> codigo: </strong>${productos[i].codigo}<strong> cantidad: </strong>${productos[i].cantidad}</p>`;
+    tabla__objetos.append(nuevoItem);
+  }
+
+  //Función por trabajar, con la cual esperaba limpiar la tabla, no supe hacerla :(
+
+  let cerrarEvento = document.createElement("button");
+  cerrarEvento.id = "idbutton";
+  cerrarEvento.innerHTML = "<p class='btn__CerrarEvento'>Cerrar Evento</p>";
+  
+  /* esta es la idea que tuve pero no me funciona:
+  let btn__cerrarEvento = document.getElementById("idbutton");  
+  btn__cerrarEvento.addEventListener = ()=>{alert("hola mundo")}; */
+
+  tabla__objetos.append(cerrarEvento);
+};
 
 //construyo las opciones del input "tipo", con una clase y un array de objetos.
 
