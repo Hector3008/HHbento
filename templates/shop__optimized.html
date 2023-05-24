@@ -1,0 +1,125 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- SEO de Programación Web -->
+    <title>Bento Tienda</title>
+    <meta name="description"
+      content="Todos los libros escritos por el reconocido doctor en teologia Joseph Ratzinger, tambien conocido como Benedicto XVI.">
+    <meta name="keywords"
+      content="libros, fe, doctrina, religion, filosofia, razon, patristica, doctor en teologia, doctorados, doctores en teologia, eminencia, monseñor, catolica, iglesia catolica, religion catolica, catolica, cristianismo, teologia, articulos,  noticias,">
+
+    <!-- link a bootstrap: -->
+    <link rel="stylesheet" href="../libs/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <!-- Toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- link a css: -->
+    <link rel="stylesheet" href="../static/bento/css/styles.css">
+    <!-- link del favicon: -->
+    <link rel="icon" type="image/jpg" href="../static/bento/assets/icons/bentofavicon.png" />
+</head>
+
+<body>
+
+  <!-- navbar: -->
+<nav class="navbar navbar-expand-lg navbar__container" id="navbar">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="../index.html">
+      <img class="navnar__logo" src="../static/bento/assets/icons/bentologo.png" alt="">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <li class="nav-item navbar__item">
+          <a class="nav-link navbar__item" href="../templates/noticias.html">noticias</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  navbar__item" href="../templates/libros.html">libros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  navbar__item" href="../templates/articulos.html">articulos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  navbar__item" href="../templates/imagenes.html">imagenes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  navbar__item" href="../templates/benedicto.html">Benedicto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  navbar__item" href="../templates/nosotros.html">nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  navbar__item" href="../templates/testimonios.html">testimonios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  navbar__item" href="../templates/contacto.html">contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- uprow (sticky item): -->
+<section>
+  <a href="#navbar" class="angle-double-up" id="uprow">
+    <img src="../static/bento/assets/icons/uprow.png" alt="whatever">
+  </a>
+</section>
+
+
+  
+  <main>
+    <H1 class="text-center display-3">TIENDA DE LIBROS</H1>
+      <!--sobre este elemento NOMeo con el Script de JS y genero el contenedor del catálogo: -->
+    <div id='productoEnCatalogoContainer' class='productoEnCatalogoContainer'>
+      <!-- AQUI VA el catálogo de PRODUCTOS: -->
+    </div>
+    <br>
+    <!--sobre este elemento NOMeo con el Script de JS y genero el contenedor del carrito: -->
+    <button id='btnVerCarrito'>Ver Carrito</button>
+
+    <br>
+    <div id='productoEnCarritoContainer' class='productoEnCarritoContainer'>
+      <!-- AQUI VA el carrito: -->
+    </div>
+    <br>
+      <!-- Este botón opera la compra del carrito: -->
+      <div class="row">
+        <div class="col">
+          <button id='btnComprar'>Comprar</button>
+        </div>
+          
+      </div>
+    
+    <br>
+
+  </main>
+
+  <!--LIBRERIAS:-->
+    <!-- LUXON -->
+    <script src=" https://cdn.jsdelivr.net/npm/luxon@3.3.0/build/global/luxon.min.js "></script>
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Toastify -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+  <!--MI CODIGO de JavaScript: -->
+  <script src='../static/bento/js/new.js' type='module'></script>
+  <!-- <script src="../static/bento/js/controller.js" type='module'></script> -->
+</body>
+
+</html>

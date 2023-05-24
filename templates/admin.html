@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords"
+    content="libros, fe, doctrina, religion, filosofia, razon, patristica, doctor en teologia, doctorados, doctores en teologia, eminencia, monseñor, catolica, iglesia catolica, religion catolica, catolica, cristianismo, teologia, articulos,  noticias,">
+  <meta name="description"
+    content="Todos los libros escritos por el reconocido doctor en teologia Joseph Ratzinger, tambien conocido como Benedicto XVI.">
+  <link rel="icon" type="image/jpg" href="../static/bento/assets/icons/bentofavicon.png" />
+
+  <!-- link a bootstrap -->
+  <link rel="stylesheet" href="../libs/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+  <!-- link a css -->
+  <link rel="stylesheet" href="../static/bento/css/styles.css">
+  <title> libros </title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar__container" id="navbar">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="../index.html">
+        <img class="navnar__logo" src="../static/bento/assets/icons/bentologo.png" alt="">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item navbar__item">
+            <a class="nav-link navbar__item" href="../templates/noticias.html">noticias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  navbar__item" href="../templates/libros.html">libros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  navbar__item" href="../templates/articulos.html">articulos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  navbar__item" href="../templates/imagenes.html">imagenes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  navbar__item" href="../templates/benedicto.html">Benedicto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  navbar__item" href="../templates/nosotros.html">nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  navbar__item" href="../templates/testimonios.html">testimonios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  navbar__item" href="../templates/contacto.html">contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- uprow (sticky item) -->
+  <section>
+    <a href="#navbar" class="angle-double-up" id="uprow">
+      <img src="../static/bento/assets/icons/uprow.png" alt="whatever">
+    </a>
+  </section>
+
+
+
+  <body>
+
+    <main>
+      <div  class="container">
+
+        <h2 class="text-center display-4">agregar nuevos productos</h2>
+
+        <!-- Mensajes -->
+        <div id="messages"></div>
+
+        <!-- Formulario -->
+      
+        <form id="formulario" >
+          <div class="mb-3">
+            
+            <label for="titulo" class="form-label">titulo</label>
+            <input type="text" class="form-control" id="titulo" placeholder="titulo del producto" required/>
+          </div>
+                              
+          <div class="mb-3">
+            <label for="descripcion" class="form-label">descripcion</label>
+            <input type="text" class="form-control" id="descripcion" placeholder="descripcion del producto" required/>
+          </div>
+                              
+          <div class="mb-3">
+            <label for="tipo" class="form-label">tipo</label>
+            <select id="tipo" class="form-select">
+                          
+              <option value="0">Seleccione una opción</option>
+                              
+            </select>
+          </div>
+                              
+          <div class="mb-3">
+            <label for="precio" class="form-label">precio</label>
+            <input type="number" class="form-control" id="precio" placeholder="precio del producto" required />
+          </div>
+                              
+          <div class="mb-3">
+            <label for="codigo" class="form-label">codigo</label>
+            <input type="text" class="form-control" id="codigo" placeholder="codigo del producto" required />
+          </div>
+          <div class="mb-3">
+            <label for="cantidad" class="form-label">cantidad</label>
+            <input type="number" class="form-control" id="cantidad" placeholder="cantidad del producto" required />
+          </div>
+
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-outline-secondary me-1" type="reset">
+              Limpiar
+            </button>
+            <button type="submit" class="btn btn-primary" id="btnRegistrar">
+              Registrar
+            </button>
+          </div>
+        </form>
+
+        <hr />
+        <h3 class="mt-3">Productos:</h3>
+
+        <!-- Buscador -->
+        <form class="d-flex" role="search" id="searchForm">
+          <button class="btn btn-outline-secondary me-1" type="reset">
+            restablecer
+          </button>
+          <input id="searchText" class="form-control me-2" type="search"
+            placeholder="ingrese un valor de busqueda para filtrar el producto"
+            aria-label="Filtrar" />
+
+          <button class="btn btn-outline-success" type="submit">Filtrar</button>
+          <button class="btn btn-outline-secondary me-1" type="submit" style="margin-left: 5px" id="btnAdminVerTabla">
+              ver tabla
+            </button>
+        </form>
+
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">id</th>
+              <th scope="col">codigo</th>
+              <th scope="col">titulo</th>
+              <th scope="col">tipo</th>
+              <th scope="col">cantidad</th>
+              <th scope="col" id="imagen">imagen</th>
+            </tr>
+          </thead>
+          <tbody id="adminTabla">
+            
+          </tbody>
+
+        
+
+        </table>
+      </div>
+      <br>
+    </main>
+
+    <!-- end CONTENIDO QUE CAMBIA  -->
+
+    <!--MI CODIGO de JavaScript: -->
+    <script src="../libs/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+  <!--LIBRERIAS:-->
+    <!-- LUXON -->
+    <script src=" https://cdn.jsdelivr.net/npm/luxon@3.3.0/build/global/luxon.min.js "></script>
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Toastify -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+  <!--MI CODIGO de JavaScript: -->
+  <script src='../static/bento/js/other.js' type='module'></script>
+
+    <!-- Footer -->
+    <footer class="text-center footer__container">
+      <!-- Grid container -->
+      <div class="container p-4">
+
+        <!-- Section: Text -->
+        <section class="mb-4">
+          <p>
+            Este sitio está siendo desarrollado por <a class="footer__mensaje__ancor"
+              href="https://github.com/Hector3008/">Hector H. Hernandez P.</a>
+            Con el propósito de demostrar y poner a prueba sus habilidades de diseño web.
+            El contenido compartido no es de su autoría.
+          </p>
+        </section>
+        <!-- Section: Text -->
+
+        <!-- Section: Links -->
+        <section class="">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Explorar</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="../index.html" class="footer__item__ancor">Inicio</a>
+                </li>
+                <li>
+                  <a href="../templates/nosotros.html" class="footer__item__ancor">Nosotros</a>
+                </li>
+                <li>
+                  <a href="../templates/contacto.html" class="footer__item__ancor">Contacto</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Enlaces de Interés</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="footer__item__ancor">FAQ</a>
+                </li>
+                <li>
+                  <a href="#!" class="footer__item__ancor">terminos de uso
+                  </a>
+                </li>
+                <li>
+                  <a href="#!" class="footer__item__ancor">política de Copyright
+                  </a>
+                </li>
+                <li>
+                  <a href="#!" class="footer__item__ancor">política de privacidad</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Links</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="footer__item__ancor">Redes Sociales</a>
+                </li>
+                <li>
+                  <a href="#!" class="footer__item__ancor">Facebook</a>
+                </li>
+                <li>
+                  <a href="#!" class="footer__item__ancor">Instagram</a>
+                </li>
+                <li>
+                  <a href="#!" class="footer__item__ancor">Twitter</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Páginas Recomendadas</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="https://www.facebook.com/profile.php?id=100044530450027" class="footer__item__ancor">gracias
+                    Benedicto XVI</a>
+                </li>
+                <li>
+                  <a href="https://www.vatican.va/content/vatican/es.html" class="footer__item__ancor">Vatican.va</a>
+                </li>
+                <li>
+                  <a href="https://www.ewtn.com/es" class="footer__item__ancor">EWTN.com</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3 footer__container__copyright">
+        © 2020 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+  </body>
+
+</html>
