@@ -12,11 +12,15 @@
     content="Todos los libros escritos por el reconocido doctor en teologia Joseph Ratzinger, tambien conocido como Benedicto XVI.">
   <link rel="icon" type="image/jpg" href="../static/bento/assets/icons/bentofavicon.png" />
 
-  <!-- link a bootstrap -->
-  <link rel="stylesheet" href="../libs/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <!-- link a bootstrap: -->
+    <link rel="stylesheet" href="../libs/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <!-- Toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- link a css: -->
+    <link rel="stylesheet" href="../static/bento/css/styles.css">
   <!-- link a css -->
   <link rel="stylesheet" href="../static/bento/css/styles.css">
-  <title> libros </title>
+  <title> admin </title>
 </head>
 
 <body>
@@ -24,7 +28,7 @@
   <nav class="navbar navbar-expand-lg navbar__container" id="navbar">
     <div class="container-fluid">
 
-      <a class="navbar-brand" href="../index.html">
+      <a class="navbar-brand" href="./shop__optimized.html">
         <img class="navnar__logo" src="../static/bento/assets/icons/bentologo.png" alt="">
       </a>
 
@@ -38,28 +42,31 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
           <li class="nav-item navbar__item">
-            <a class="nav-link navbar__item" href="../templates/noticias.html">noticias</a>
+            <a class="nav-link navbar__item" href="#!">noticias</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link  navbar__item" href="../templates/libros.html">libros</a>
+            <a class="nav-link  navbar__item" href="#!">libros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link  navbar__item" href="../templates/articulos.html">articulos</a>
+            <a class="nav-link  navbar__item" href="#!">articulos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link  navbar__item" href="../templates/imagenes.html">imagenes</a>
+            <a class="nav-link  navbar__item" href="#!">imagenes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link  navbar__item" href="../templates/benedicto.html">Benedicto</a>
+            <a class="nav-link  navbar__item" href="#!">Benedicto</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link  navbar__item" href="../templates/nosotros.html">nosotros</a>
+            <a class="nav-link  navbar__item" href="#!">nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link  navbar__item" href="../templates/testimonios.html">testimonios</a>
+            <a class="nav-link  navbar__item" href="#!">testimonios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link  navbar__item" href="../templates/contacto.html">contacto</a>
+            <a class="nav-link  navbar__item" href="#!">contacto</a>
+          </li>
+                    <li class="nav-item">
+            <a class="nav-link  navbar__item" href="./shop__optimized.html" >tienda</a>
           </li>
         </ul>
       </div>
@@ -184,8 +191,19 @@
     <!-- Toastify -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
-  <!--MI CODIGO de JavaScript: -->
-  <script src='../static/bento/js/other.js' type='module'></script>
+  <!--mi data en JSON de JavaScript: -->
+  <!--
+    <script src="./../static/bento/js/other.js"></script> -->
+ 
+  <script src="./../static/bento/js/classes/producto.js"></script>
+
+  <script src="./../static/bento/js/scripts/publicidad.js"></script>
+
+  <script src="./../static/bento/js/scripts/database.js"></script>  
+
+  <script src="./../static/bento/js/scripts/upToDataBase.js"></script>
+  
+  <script src="./../static/bento/js/scripts/admin.js"></script>
 
     <!-- Footer -->
     <footer class="text-center footer__container">

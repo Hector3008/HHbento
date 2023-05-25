@@ -1,0 +1,123 @@
+[
+  {
+    "imagen": "../static/bento/assets/img/libros/libros__0001.jpg",
+    "id": 1,
+    "tipo": "libro",
+    "titulo": "DEUS CARITAS EST.",
+    "descripcion": "CELEBRE ENCÍCICLIPA DEL SANTO PADRE SOBRE EL AMOR CRISTIANO...",
+    "precio": 10,
+    "codigo": "DCE",
+    "cantidad": 20,
+    "stock": true
+  },
+  {
+    "imagen": "../static/bento/assets/img/libros/libros__0002.jpg",
+    "id": 2,
+    "tipo": "libro",
+    "titulo": "CARITAS IN VERITATE.",
+    "descripcion": "SOBRE EL DESARROLLO HUMANO INTEGRAL EN LA CARIDAD Y EN LA VERDAD... ",
+    "precio": 10,
+    "codigo": "CIV",
+    "cantidad": 0,
+    "stock": false
+  },
+  {
+    "imagen": "../static/bento/assets/img/libros/libros__0003.jpg",
+    "id": 3,
+    "tipo": "libro",
+    "titulo": "JESUS DE NAZARETH.",
+    "descripcion": "BENEDICTO XVI RESCATA LA FIGURA DE JESÚS DE RECIENTES DESCRIPCIONES «POPULARES» Y RESTAURA LA VERDADERA IDENTIDAD DE JESÚS QUE NOS PRESENTAN LOS EVANGELIOS....",
+    "precio": 20,
+    "codigo": "JDN",
+    "cantidad": 20,
+    "stock": true
+  },
+  {
+    "imagen": "../static/bento/assets/img/libros/libros__0004.jpg",
+    "id": 4,
+    "tipo": "libro",
+    "titulo": "INTRODUCCION AL CRISTIANISMO.",
+    "descripcion": "LECCIONES SOBRE EL CREDO APOSTÓLICO. DECIMOSEXTA EDICIÓN....",
+    "precio": 30,
+    "codigo": "IAC",
+    "cantidad": 20,
+    "stock": true
+  },
+  {
+    "imagen": "../static/bento/assets/img/libros/libros__0005.jpg",
+    "id": 5,
+    "tipo": "libro",
+    "titulo": "INFANCIA DE JESUS.",
+    "descripcion": "EL PAPA, DETALLANDO COMO LA HISTORIA DE LA INFANCIA Y NIÑEZ DE JESÚS ES HOY POR HOY AUN TAN RELEVANTE COMO FUE HACE DOS MIL AÑOS...",
+    "precio": 65,
+    "codigo": "IDJ",
+    "cantidad": 20,
+    "stock": true
+  },
+  {
+    "imagen": "../static/bento/assets/img/libros/libros__0006.jpg",
+    "id": 6,
+    "tipo": "libro",
+    "titulo": "DIALÉCTICA DE LA SECULARIZACIÓN.",
+    "descripcion": " JÜRGEN HABERMAS, DEBATÍA EN PÚBLICO CON UNO DE LOS PRINCIPALES REPRESENTANTES DE LA IGLESIA CATÓLICA, EL ENTONCES CARDENAL JOSEPH RATZINGER, HOY PAPA BENEDICTO XVI...",
+    "precio": 80,
+    "codigo": "DDS",
+    "cantidad": 20,
+    "stock": true
+  },
+  {
+    "imagen": "../static/bento/assets/img/libros/libros__0007.jpg",
+    "id": 7,
+    "tipo": "libro",
+    "titulo": "ESCATOLOGÍA: LA MUERTE Y LA VIDA ETERNA.",
+    "descripcion": "CUANDO EN 1977 JOSEPH RATZINGER, ENTONCES PROFESOR DE TEOLOGÍA RECIÉN DESIGNADO OBISPO DE MÚNICH, PRESENTABA ÉSTE SU PRIMER LIBRO, LA ESCATOLOGÍA APENAS DEJABA DE SER... ",
+    "precio": 90,
+    "codigo": "EMVE",
+    "cantidad": 20,
+    "stock": true
+  },
+  {
+    "imagen": "../static/bento/assets/img/libros/libros__0004.jpg",
+    "id": 8,
+    "tipo": "libro",
+    "titulo": "EL ESPIRITU DE LA LITURGIA.",
+    "descripcion": "STA OBRA PROFUNDIZA EN UNO DE LOS ELEMENTOS CLAVES DEL CONCILIO VATICANO II, LA RENOVACIÓN LITÚRGICA, CUYO ESPÍRITU EN MUCHOS CASOS NO HA LLEGADO A LOS CRISTIANOS CON LA MISMA RAPIDEZ QUE LOS CAMBIOS EXTERIORES...",
+    "precio": 70,
+    "codigo": "EDL",
+    "cantidad": 20,
+    "stock": true
+  },
+  {
+    "imagen": "../static/bento/assets/img/libros/libros__0009.jpg",
+    "id": 9,
+    "tipo": "libro",
+    "titulo": "THE GOD OF JESUS CHRIST.",
+    "descripcion": " PROFOUND THOUGHTS ON THE NATURE AND PERSON OF GOD, BUILDING A BRIDGE BETWEEN THEOLOGY AND SPIRITUALITY AS HE MAKES WIDE... ",
+    "precio": 20,
+    "codigo": "GJC",
+    "cantidad": 20,
+    "stock": true
+  },
+  {
+    "imagen": "../static/bento/assets/img/libros/libros__0010.jpg",
+    "id": 10,
+    "tipo": "libro",
+    "titulo": "JOSEPH Y CHICO.",
+    "descripcion": "EN ESTE CURIOSO LIBRO, CHICO (FIEL AMIGO DE BENEDICTO) CUENTA LA VIDA DEL PAPA. ES UNA OBRA ESPECIALMENTE ESCRITA PARA NIÑOS...",
+    "precio": 40,
+    "codigo": "JYC",
+    "cantidad": 20,
+    "stock": true
+  },
+  {
+    "imagen": "../static/bento/assets/img/libros/libros__0011.jpg",
+    "id": 11,
+    "tipo": "libro",
+    "titulo": "FE Y RAZON.",
+    "descripcion": "ALGUNAS DE LAS INTERVENCIONES MÁS IMPORTANTES DE BENEDICTO XVI EN TORNO A ESTE ASUNTO, Y REPRODUCIMOS DOS DISCURSOS PRONUNCIADOS EN 1998 Y 2005...",
+    "precio": 50,
+    "codigo": "FYR",
+    "cantidad": 20,
+    "stock": true
+  }
+]

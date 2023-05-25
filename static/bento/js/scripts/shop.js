@@ -12,9 +12,12 @@ const btnComprar = document.getElementById("btnComprar");
 const btnVerCarrito = document.getElementById("btnVerCarrito");
 
 // FUNCIONES
+
 //cargar catálogo en html:
 const CargarCatalogoEnHTML = (catalogo) => {
   //con esta Función hago el NOM del catálogo en la página principal. Es decir, mostraré los productos:
+
+  //(PENDIENTE) debo optimizar este código, iterando sobre cada elemento del array, sin el incremento de 3:
   for (let index = 0; index <= catalogo.length - 1; index += 3) {
     let item = document.createElement("div");
     item.setAttribute("class", "Item");
@@ -155,7 +158,7 @@ const CargarCatalogoEnHTML = (catalogo) => {
             `;
     productoEnCatalogoContainer.appendChild(item);
 
-    //debo generar los eventos a medida que cargo los elementos del catálogo así que lo hago de esta manera:
+  //debo generar los eventos a medida que cargo los elementos del catálogo así que lo hago de esta manera:
 
     //genero la variable getE:
     let getE1 = document.getElementById(catalogo[index].id);
@@ -170,6 +173,7 @@ const CargarCatalogoEnHTML = (catalogo) => {
         agregarAlCarrito(catalogo[index + 1].id);
       };
     }
+
     //y repito con el tercer elemento del ciclo for:
     if (catalogo[index + 2]) {
       let getE2 = document.getElementById(catalogo[index + 2].id);
@@ -179,6 +183,7 @@ const CargarCatalogoEnHTML = (catalogo) => {
     }
   }
 };
+
 //agregar al carrito:
 function agregarAlCarrito(id) {
   //genero una variable capturando el elemento producto:
@@ -223,7 +228,7 @@ function agregarAlCarrito(id) {
         }).showToast();
       }
     }
-    //en caso contrario, genero el elemento con un nuevo objeto 'Producto':
+    //en caso contrario (es decir, que no esté en la lista 'productosEnMiCarrito'), genero el elemento con un nuevo objeto 'Producto':
     else {
       productoAMiCarrito = new Producto(
         miCarrito.productos.length.toString(),
@@ -238,6 +243,8 @@ function agregarAlCarrito(id) {
 
       // y lo agrego al dicho array de objetos en 'miCarrito':
       miCarrito.productos.push(productoAMiCarrito);
+
+      //y notifico con el respectivo 'toastify':
       Toastify({
         text: `ahora tienes ${productoAMiCarrito.cantidad} unidad/es de ${productoAMiCarrito.titulo} en el carrito`,
         duration: 3000,
@@ -249,6 +256,7 @@ function agregarAlCarrito(id) {
   }
   //en caso contrario, es decir, que no tenga stock.
   else {
+    //notifico con un un popup respectivo 'Swal':
     Swal.mixin({
       toast: true,
       position: "top-right",
@@ -264,16 +272,16 @@ function agregarAlCarrito(id) {
       title: "No hay stock del producto seleccionado",
     });
   }
-  //finalmente, cargo la actualización del array al array
+  //finalmente, cargo la actualización del array al localStorage:
   localStorage.setItem(
     "productosEnMiCarrito",
     JSON.stringify(miCarrito.productos)
   );
   localStorage.setItem("totalCarrito", generateTotalCarrito());
 }
-//esta función (agregarAlCarrito) la vinculo al elemento 'getE1' de la función 'cargarCarrito'. Esto, porque son elementos que se generan con NOM, por lo cual debo generar el evento conforme genero cada elemento de este NOM.
+//esta función (agregarAlCarrito) la vinculo a los elementos 'getE' de la función 'cargarCarrito'. Esto, porque son elementos que se generan con NOM, por lo cual debo generar el evento conforme genero cada elemento de este NOM.
 
-//el carrito está vacío:
+//el carrito está vacío, y lo advierto con un popup 'sewal':
 function carritoVacio() {
   productoEnCarritoContainer.innerHTML = ``;
   let sign = document.createElement("h2");
@@ -286,32 +294,22 @@ function carritoVacio() {
     timer: 900,
   });
 }
-//defino la variable 'totalCarrito' porque voy a querer iterar con ella después:
-localStorage.getItem("totalCarrito") || localStorage.setItem("totalCarrito", 0);
 
-let totalCarrito = parseFloat(localStorage.getItem("totalCarrito"));
-
-//genero esta función para usar en momentos posteriores:
-function generateTotalCarrito() {
-  let total = 0;
-
-  miCarrito.productos.forEach((e) => {
-    let subtotal = e.cantidad * e.precio;
-    total = total + subtotal;
-  });
-  return total;
-}
+//(PENDIENTE) aún debo estilizar mejor este NOM en el CSS y las clases para que sea más presentable:
 
 //NOM con los items del carrito:
 function productosEnCarritoNOM() {
+    
+  //vacío el texto dentro del elemento html:
   productoEnCarritoContainer.innerHTML = ``;
-  let totalCarrito = 0;
 
   miCarrito.productos.forEach((e) => {
+    //genero un elemento html que servirá de contenedor a cada elemento del carrito:
     let productoEnCarrito = document.createElement("div");
-
+    //genero la variable 'subTotal' para mostrarla después en el NOM:
     let subTotal = e.cantidad * e.precio;
-    totalCarrito = totalCarrito + subTotal;
+
+
 
     productoEnCarrito.innerHTML = `
             <h3>${e.titulo}</h3>
@@ -351,6 +349,7 @@ function productosEnCarritoNOM() {
   let btnOcultarCarrito = document.getElementById("btnOcultarCarrito");
   btnOcultarCarrito.addEventListener("click", () => ocultarCarrito());
 
+  //genero la función 'vaciarCarrito' para reiniciar el array:
   function vaciarCarrito() {
     miCarrito.productos = [];
     localStorage.setItem("productosEnMiCarrito", []);
@@ -360,7 +359,10 @@ function productosEnCarritoNOM() {
   //GETeo el elemento btnVaciarCarrito y le vinculo la función 'vaciarCarrito':
   let btnVaciarCarrito = document.getElementById("btnVaciarCarrito");
   btnVaciarCarrito.addEventListener("click", () => vaciarCarrito());
+
+  //(PENDIENTE) generar un evento para eliminar elementos específicos dentro del carrito:
 }
+
 //Mostrar carrito:
 function mostrarCarrito() {
   miCarrito.productos.length ? productosEnCarritoNOM() : carritoVacio();
@@ -386,19 +388,25 @@ function mostrarPedido() {
     //genero variables de acceso con fechas, luego las usaré en el html del 'swal':
     const DateTime = luxon.DateTime;
     const fecha = DateTime.now().setLocale("es").toLocaleString();
-
+    //y genero el 'popup' con 'swal'. Esto enseña el pedido y la orden.
+      //(PENDIENTE) almacenar los pedidos en una base de datos del localStorgare y simular el proceso de pago: 
     Swal.fire({
       icon: "success",
       title: "Exito!",
       html: `Su orden:\n ${pedido()} Ha sido generada con éxito. \n`,
       footer: `Fecha: ${fecha} - Precio total de su orden: $${generateTotalCarrito()}`,
     });
+    //reinicio el array en localStorage:
     localStorage.setItem("productosEnMiCarrito", JSON.stringify([]));
+    //reinicio la variable de acceso al array en el código:
     miCarrito.productos = JSON.parse(
       localStorage.getItem("productosEnMiCarrito")
     );
+    //reinicio el html del carrito:
     productoEnCarritoContainer.innerHTML = ``;
-  } else {
+  }
+  //en caso contrario, (si no hay productos en el array del carrito), reporto con un mensaje:
+  else {
     Swal.fire({
       icon: "error",
       title: "No hay productos en el carrito",
@@ -407,6 +415,7 @@ function mostrarPedido() {
     });
   }
 }
+//asigno la función 'mostrarPedido' al 'comprar':
 btnComprar.addEventListener("click", () => mostrarPedido());
 
 //EJECUCIONES:
@@ -414,4 +423,4 @@ btnComprar.addEventListener("click", () => mostrarPedido());
 //cargo el catálogo (NOM):
 CargarCatalogoEnHTML(catalogo);
 
-//====================================================================================
+//(IMPORTANTE y PENDIENTE) debo generar un filtrado del catalogo con un form de input 'búsqueda'. Lo haré con un include.
